@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Variables</h2>
+    @{
+        /**/
+
+        var weekDay = DateTime.Now.DayOfWeek;
+    }
+
+    <p>Today is: @weekDay</p>
+ 
+
+    <h2>Boucle</h2>
+    @for (var i = 10; i < 16; i++)
+    {
+        <p style="font-size: @(i + "pt")">My font size is now: @i</p>
+    }
+    <h2></h2>
+    <h2>Condition</h2>
+    @{
+        var txt = "";
+        if (DateTime.Now.Hour > 12)
+        { txt = "Good Evening";
+        }
+        else
+        { txt = "Good Morning"; }
+    }
+
+    
+    <p>@txt;</p> 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Server Variables</h1>
+    <ul>
+        @foreach (var myItem in Request.ServerVariables)
+        {
+            <li>@myItem  </li>
+        }
+    </ul>
+    <h2>Examples</h2>
+    <p>PATH_INFO: @Request["PATH_INFO"]</p>
+    <p>SERVER_NAME : @Request["SERVER_NAME"]</p>
+    <p>URL: @Request["URL"]</p>
+    <p> HTTP_HOST: @Request["HTTP_HOST"]</p>
+</body>
+</html>

@@ -84,8 +84,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HelloWorldRasor.cshtml" />
     <None Include="packages.config" />
+    <Content Include="ServerVariables.cshtml" />
+    <Content Include="Variable.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -94,6 +95,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloWorldRasor.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
